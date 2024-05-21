@@ -31,7 +31,7 @@
         <div class="calculator bg-white rounded p-8 shadow-md">
             <div class="d-flex w-full mt-3 mb-3">
                 <form action="update.php" method="post">
-                    <input type="text" id="display" name="price" class="w-full mb-4 px-2 py-1 border rounded" readonly>
+                        <input type="text" id="display" name="price" class="w-full mb-4 px-2 py-1 border rounded" readonly>
                     <div>
                         <button class="btn border p-3" onclick="update()">計上</button>
                         <a class="btn border p-3" href="sales/">売上</a>
@@ -39,23 +39,22 @@
                 </form>
             </div>
             <div class="grid grid-cols-4 gap-4">
-                <button class="btn" onclick="addToDisplay('7')">7</button>
-                <button class="btn" onclick="addToDisplay('8')">8</button>
-                <button class="btn" onclick="addToDisplay('9')">9</button>
-                <button class="btn" onclick="clearAll()">AC</button>
-                <button class="btn" onclick="addToDisplay('4')">4</button>
-                <button class="btn" onclick="addToDisplay('5')">5</button>
-                <button class="btn" onclick="addToDisplay('6')">6</button>
-                <button class="btn" onclick="calculate('+')">+</button>
-                <button class="btn" onclick="addToDisplay('1')">1</button>
-                <button class="btn" onclick="addToDisplay('2')">2</button>
-                <button class="btn" onclick="addToDisplay('3')">3</button>
-                <button class="btn" onclick="calculate('*')">x</button>
-                <button class="btn" onclick="addToDisplay('0')">0</button>
-                <button class="btn" onclick="addTax()">Tax</button> <!-- Taxボタンの追加 -->
-                <button class="btn" onclick="calculateTotal()">=</button>
-            </div>
-        </div>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="addToDisplay('7')">7</button>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="addToDisplay('8')">8</button>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="addToDisplay('9')">9</button>
+            <button class="btn bg-red-500 text-white p-3 rounded" onclick="clearAll()">AC</button>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="addToDisplay('4')">4</button>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="addToDisplay('5')">5</button>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="addToDisplay('6')">6</button>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="calculate('+')">+</button>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="addToDisplay('1')">1</button>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="addToDisplay('2')">2</button>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="addToDisplay('3')">3</button>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="calculate('*')">x</button>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="addToDisplay('0')">0</button>
+            <button class="btn bg-gray-200 p-3 rounded" onclick="addTax()">Tax</button>
+            <button class="btn bg-green-500 text-white p-3 rounded" onclick="calculateTotal()">=</button>
+        </div>        </div>
     </div>
 <script>
         var memory = "";
