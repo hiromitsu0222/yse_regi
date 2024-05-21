@@ -1,0 +1,43 @@
+/* 電卓のコンテナ スタイル */
+.calculator {
+  width: 300px; /* 電卓の幅 */
+  background-color: #f0f0f0; /* 背景色 */
+  padding: 20px; /* 内側の余白 */
+  border-radius: 8px; /* 角の丸み */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 影の効果 */
+}
+
+/* ディスプレイ（表示部）のスタイル */
+.display {
+  width: 100%; /* 幅はコンテナに合わせて100% */
+  background-color: #fff; /* 背景色は白 */
+  border: 1px solid #ccc; /* 境界線 */
+  border-radius: 4px; /* 角の丸み */
+  padding: 10px; /* パディング */
+  margin-bottom: 20px; /* 下マージン */
+  text-align: right; /* テキストを右揃え */
+  font-size: 1.5em; /* フォントサイズ */
+}
+
+/* ボタンの基本スタイル */
+.button {
+  width: 68px; /* ボタンの幅 */
+  height: 68px; /* ボタンの高さ */
+  background-color: #e0e0e0; /* ボタンの背景色 */
+  border: none; /* 境界線なし */
+  border-radius: 4px; /* 角の丸み */
+  margin: 1px; /* 余白 */
+  font-size: 20px; /* フォントサイズ */
+  cursor: pointer; /* カーソルをポインタに */
+}
+
+/* ボタンが押されたときのスタイル */
+.button:active {
+  background-color: #d0d0d0; /* ボタンの背景色を暗くする */
+}
+
+/* ボタンのレイアウト用スタイル */
+.button-row {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: space-between; /* 子要素を均等に配置 */
+}
